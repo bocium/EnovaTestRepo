@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace HelloWorld
 {
@@ -6,7 +7,11 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
+            Trace.TraceInformation("Start");
+
             Console.WriteLine("Hello World!");
+
+            Trace.TraceInformation("End");
             Console.ReadLine();
         }
     }
